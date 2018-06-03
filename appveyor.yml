@@ -6,8 +6,8 @@ environment:
 install:
     - "SET PYTHON=C:\\Python36"
     - "SET PATH=%PYTHON%;%PYTHON%\\Scripts;%PATH%"
-    - pip install git+https://github.com/ambv/black.git@pull/288
-    - pip install black
+    - pip install -U pip
+    - pip install git+https://github.com/ambv/black.git@refs/pull/288/merge
     - ps: appveyor DownloadFile "https://raw.githubusercontent.com/SublimeText/UnitTesting/master/sbin/appveyor.ps1"
     - ps: .\appveyor.ps1 "bootstrap" -verbose
     # install Package Control
