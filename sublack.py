@@ -23,6 +23,7 @@ CONFIG_OPTIONS = [
     "black_command",
     "black_on_save",
     "black_line_length",
+    "black_skip_string_normalization",
     "black_fast",
     "black_debug_on",
     "black_default_encoding",
@@ -95,6 +96,10 @@ class Black:
         # Line length option
         if self.config["black_line_length"] is not None:
             cmd.extend(["-l", str(self.config["black_line_length"])])
+
+        # Skip string normalization option
+        if self.config["black_skip_string_normalization"]:
+            cmd.append("--skip-string-normalization")
 
         # fast
         if self.config["black_fast"]:

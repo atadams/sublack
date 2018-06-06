@@ -9,9 +9,13 @@
       // uses black default, if not modified
       "black_line_length": null,
 
+      // line length
+      // uses black default, if not modified
+      "black_skip_string_normalization": false,
+
       // If --fast given, skip temporary sanity checks.
       "black_fast": false,
-      
+
       //debug mode
       // show black log in console
       // errors are always shown
