@@ -9,8 +9,7 @@
       // uses black default, if not modified
       "black_line_length": null,
 
-      // line length
-      // uses black default, if not modified
+      // Skip string normalization option
       "black_skip_string_normalization": false,
 
       // If --fast given, skip temporary sanity checks.
